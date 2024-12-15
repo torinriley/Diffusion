@@ -21,7 +21,7 @@ model_file = "data/v1-5-pruned-emaonly.ckpt"
 models = model_loader.load_models(model_file, DEVICE)
 
 
-prompt = "A painting of Mars from the surface, oil painting style. The sky is red and the ground is orange."
+prompt = "A painting of a planet from space"
 uncond_prompt = "" 
 do_cfg = True
 cfg_scale = 8 
@@ -29,7 +29,7 @@ cfg_scale = 8
 
 sampler_name = "ddpm"
 num_inference_steps = 50
-seed = 42
+seed = 42 
 strength = 0.75
 
 output_image = pipeline.generate(
