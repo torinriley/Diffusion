@@ -1,4 +1,4 @@
-# Diffusion from Sratch
+# Diffusion Pipeline from Sratch
 This project implements a text-to-image generation pipeline inspired by the Stable Diffusion architecture. The pipeline was built entirely from scratch in PyTorch. It integrates a Variational Autoencoder (VAE) for latent space compression, Denoising Diffusion Probabilistic Models (DDPM) for iterative denoising, and CLIP-based text embeddings for aligning text and images effectively.
 
 •	Custom Variational Autoencoder (VAE): Compresses images into latent representations for efficient generation.
