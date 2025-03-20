@@ -1,11 +1,10 @@
 # Custom Diffusion Model Text-to-Image Generator
 
-A custom implementation of a text-to-image generation model with Squeeze-Excitation blocks for improved feature selection.
+A custom implementation of a text-to-image generation model usiing stable diffusion weights.
 
 ## Features
 
 - Custom diffusion model implementation
-- Squeeze-Excitation blocks for enhanced feature selection
 - Configurable generation parameters
 - User-friendly Gradio interface
 - Automatic model downloading
@@ -18,13 +17,13 @@ A custom implementation of a text-to-image generation model with Squeeze-Excitat
    - Seed
    - Image dimensions
    - Guidance scale
-   - Number of inference steps
+   - Number of inference steps 
 3. **Click "Run"** to generate the image.
 
 ## Technical Details
 
 - **Model:** Stable Diffusion v1.5 with custom modifications
-- **Architecture:** Custom UNet with Squeeze-Excitation blocks
+- **Architecture:** Custom UNet
 - **Default settings:**
   - Image size: 512x512
   - Guidance scale: 7.5
