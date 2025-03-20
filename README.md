@@ -1,17 +1,51 @@
-# Diffusion Pipeline from Sratch
-This project implements a text-to-image generation pipeline inspired by the Stable Diffusion architecture. The pipeline was built entirely from scratch in PyTorch. It integrates a Variational Autoencoder (VAE) for latent space compression, Denoising Diffusion Probabilistic Models (DDPM) for iterative denoising, and CLIP-based text embeddings for aligning text and images effectively.
+# Custom Diffusion Model Text-to-Image Generator
 
-•	Custom Variational Autoencoder (VAE): Compresses images into latent representations for efficient generation.
+A custom implementation of a text-to-image generation model with Squeeze-Excitation blocks for improved feature selection.
 
-•	DDPM Sampling: Implements iterative denoising to generate high-quality images from noise.
+## Features
 
-•	Text Embedding with CLIP: Ensures precise alignment of text and generated images.
+- Custom diffusion model implementation
+- Squeeze-Excitation blocks for enhanced feature selection
+- Configurable generation parameters
+- User-friendly Gradio interface
+- Automatic model downloading
 
+## Usage
 
+1. **Enter your prompt** in the text box.
+2. **(Optional) Adjust advanced settings:**
+   - Negative prompt
+   - Seed
+   - Image dimensions
+   - Guidance scale
+   - Number of inference steps
+3. **Click "Run"** to generate the image.
 
-## Thanks to the following resources
-| Resource                           | Description                              |
-|------------------------------------|------------------------------------------|
-| [Tokenizer](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/main/tokenizer) | Tokenizer files for Stable Diffusion.    |
-| [Model Repository](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/tree/main) | Main Hugging Face repository for Stable Diffusion v1.5. |
-| [Research Paper](https://arxiv.org/pdf/2112.10752) | Original Stable Diffusion research paper. |
+## Technical Details
+
+- **Model:** Stable Diffusion v1.5 with custom modifications
+- **Architecture:** Custom UNet with Squeeze-Excitation blocks
+- **Default settings:**
+  - Image size: 512x512
+  - Guidance scale: 7.5
+  - Inference steps: 50
+  - Seed: 42 (randomizable)
+
+## Examples
+
+Try these example prompts:
+- "A ultra sharp photorealistic painting of a futuristic cityscape at night with neon lights and flying cars"
+- "A serene mountain landscape at sunset with snow-capped peaks and a clear lake reflection"
+- "A detailed portrait of a cyberpunk character with glowing neon implants and holographic tattoos"
+
+## Installation
+
+The model will be automatically downloaded on first run. No manual installation required.
+
+## License
+
+This project is available under the MIT License.
+
+## Try it out on Hugging Face Spaces
+
+Check out the live demo on Hugging Face Spaces: [torinriley/Diffusion](https://huggingface.co/spaces/torinriley/Diffusion)
