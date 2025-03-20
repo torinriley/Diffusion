@@ -1,6 +1,0 @@
-pytorch_lightning
-torch
-transformers
-Pillow
-tqdm
-ddpm
